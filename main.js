@@ -1,12 +1,14 @@
-const goback = document.getElementById("goback");
-const quizScreen = document.getElementById('quiz-screen');
-const clawGame = document.getElementById('claw-game');
-const comfortScreen = document.getElementById('comfort-screen');
-const comfortText = document.getElementById('comfort-text');
-const nextComfortBtn = document.getElementById('next-comfort-btn');
-const grabBtn = document.getElementById('grab-btn');
-const plushContainer = document.getElementById('plush-container');
-const body = document.body
+document.addEventListener("DOMContentLoaded", () => {
+  const goback = document.getElementById("goback");
+  const quizScreen = document.getElementById('quiz-screen');
+  const clawGame = document.getElementById('claw-game');
+  const comfortScreen = document.getElementById('comfort-screen');
+  const comfortText = document.getElementById('comfort-text');
+  const nextComfortBtn = document.getElementById('next-comfort-btn');
+  const grabBtn = document.getElementById('grab-btn');
+  const plushContainer = document.getElementById('plush-container');
+  const body = document.body;
+});
 
 // Các thú bông (icon emoji) và vị trí lộn xộn
 const plushies = [
