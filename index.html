@@ -6,36 +6,66 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link href="style.css" type="text/css"rel="stylesheet"/>
   <script type="text/javascript" src="main.js"></script>
+  <script src="https://kit.fontawesome.com/ef199ec5b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div id="wrapper">
 
-  <!-- Màn hình 1: Quiz -->
-  <div id="quiz-screen">
-    <h1>Một Lời Khen - Một Động Lực</h1><br>
-    <p>Hôm Nay Bạn Có Chuyện Gì Buồn Sao? Hãy Tâm Sự Với Mình Nhé</p>
-    <button class="option-btn" data-choice="A">A. Chuyện Gia Đình</button>
-    <button class="option-btn" data-choice="B">B. Chuyện Học Tập</button>
-    <button class="option-btn" data-choice="C">C. Chuyện Tình Cảm</button>
-    <button class="option-btn" data-choice="D">D. Chuyện Bạn Bè</button>
-    <button class="option-btn" data-choice="E">E. Chuyện Sức Khỏe</button>
-    <button class="option-btn" data-choice="F">F. Chuyện Công Việc</button>
-    <button class="option-btn" data-choice="G">G. Chuyện Tương Lai</button>
-    <button class="option-btn" data-choice="H">H. Tớ Chỉ Buồn Thôi</button>
-  </div>
+    <!-- Màn hình 1: Quiz -->
+    <div id="quiz-screen">
+      <h1>Một Lời Khen - Một Động Lực</h1><br>
+      <p>Hôm Nay Bạn Có Chuyện Gì Buồn Sao? Hãy Tâm Sự Với Mình Nhé</p>
+      <button class="option-btn" data-choice="A">A. Chuyện Gia Đình</button>
+      <button class="option-btn" data-choice="B">B. Chuyện Học Tập</button>
+      <button class="option-btn" data-choice="C">C. Chuyện Tình Cảm</button>
+      <button class="option-btn" data-choice="D">D. Chuyện Bạn Bè</button>
+      <button class="option-btn" data-choice="E">E. Chuyện Sức Khỏe</button>
+      <button class="option-btn" data-choice="F">F. Chuyện Công Việc</button>
+      <button class="option-btn" data-choice="G">G. Chuyện Tương Lai</button>
+      <button class="option-btn" data-choice="H">H. Tớ Chỉ Buồn Thôi</button>
+    </div>
 
-  <!-- Màn hình 2: Game gắp thú bông -->
-  <div id="claw-game">
-    <h1>Chọn con thú bông bạn muốn nhé!</h1>
-    <div id="plush-container"></div>
-    <button id="grab-btn" disabled>Gắp Thú</button>
-  </div>
+    <!-- Màn hình 2: Game gắp thú bông -->
+    <div id="claw-game">
+      
+      <div id="mainH">
+          
+          <div>
+            <h1>Chọn con thú bông bạn muốn nhé!</h1>
+            <div id = "button-system">
+          
+              <div class = "row"><button id="up"><i class="fa-solid fa-arrow-up"></i></button></div>
+              <div class = "row"><button id="left"><i class="fa-solid fa-arrow-left"></i></button><button id="grab-btn">Gắp</button><button id="right"><i class="fa-solid fa-arrow-right"></i></button></div>
+              <div class = "row"><button id="down"><i class="fa-solid fa-arrow-down"></i></button></div>
+            </div>
+          </div>
 
-  <!-- Màn hình 3: Màn hình an ủi -->
-  <div id="comfort-screen">
-    <h1>Lời An Ủi Cho Bạn</h1>
-    <button id="goback">Quay lại</button>
-    <p id="comfort-text"></p>
-    <button id="next-comfort-btn">Lời Khuyên Khác</button>
+        <div id="plush-container"></div>
+          <div id="hook"></div>
+          <div id="shade"></div>
+          <div id="claw">
+            <div class="claw-hand left"></div>
+            <div class="claw-hand right"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Màn hình 3: Màn hình an ủi -->
+    <div id="comfort-screen">
+      <h1>Lời An Ủi Cho Bạn</h1>
+      
+      <div id="container">
+        <div id="cplush"></div>
+
+        <div id="cont">
+          
+          <p id="comfort-text"></p>
+          <div><button id="next-comfort-btn">Lời Khuyên Khác</button> <button id="goback">Quay lại</button></div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
