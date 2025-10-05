@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    
     function updateClawPosition(x, y) {
         const containerRect = plushContainer.getBoundingClientRect();
         const minX = 0;
